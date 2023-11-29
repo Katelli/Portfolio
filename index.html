@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/stylesheets/utility.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/palette.css">
+
+    <script defer src="main.js"></script>
+
+    <title>Portfolio website</title>
+
+    <style>
+        div.project:nth-child(even){
+        background-color: var(--color-secondary);
+        }
+
+        div.project:nth-child(odd){
+        background-color: var(--color-tertiary);
+        }
+    </style>
+</head>
+<body class="body bg-primary">
+
+    <header class="header flex flex-row justify-between align-it-center bg-tertiary">
+        <button id="mode" class="icon-light"></button>
+
+        <nav>
+            <ul class="ul flex flex-row">                
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+    
+                <a href="#about">
+                    <li>About</li>
+                </a>
+    
+                <a href="#projects">
+                    <li>Projects</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main flex flex-col min-h-100">
+
+        <section id="home" class="home-image flex justify-center align-it-center min-h-100">
+            <h2 class="home-image-text">Welcome</h2>
+        </section>
+
+        <div class="buffer bg-linear1"></div>
+
+        <section id="about" class="flex flex-col align-it-center justify-evenly min-h-100 bg-secondary fg-primary">
+            <h2>About me</h2>
+            <img class="about-image" src="/assets/leaf gradient.jpg" alt="Gradient leaves">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nihil deleniti in at quo cupiditate ea cumque! Incidunt, voluptas consequatur!</p>
+        </section>
+
+        <div class="buffer bg-linear2"></div>
+
+        <section id="projects" class="flex flex-col align-it-center justify-around min-h-100">
+            <h2 class="fg-secondary">My Projects</h2>
+            <div class="flex flex-row-wrap justify-around">
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="">
+                        <img src="" alt="link project 1">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="https://katelli-playercard.netlify.app/">
+                        <img src="/assets/playercard.png" alt="link project 2">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="https://deploy-test-darkmode.netlify.app/">
+                        <img src="/assets/darkmode site.png" alt="link project 3">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="https://katelli-animation.netlify.app/">
+                        <img src="/assets/animation.png" alt="link project 4">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="https://katelli-unit-converter.netlify.app/">
+                        <img src="/assets/unit converter.png" alt="link project 5">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="project flex flex-col align-it-center justify-center">
+                    <a href="">
+                        <img src="" alt="link project 6">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="buffer bg-linear1"></div>
+
+    </main>
+
+    <footer class="footer bg-secondary">
+        <h2>Made by Kat</h2>
+    </footer>
+    
+</body>
+</html>
