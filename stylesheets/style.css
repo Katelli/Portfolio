@@ -35,8 +35,9 @@ li{
 .home-image-text{
     font-size: 64px;
     position: absolute;
-    color: rgb(107, 105, 105);
-    max-width: 90vw;
+    color: rgb(58, 57, 57);
+    min-width: 20vw;
+    min-height: 10vh;
     
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.6);
@@ -46,7 +47,7 @@ li{
     -webkit-backdrop-filter: blur(7.3px);
     border: 1px solid rgba(255, 255, 255, 0.34);
 }
-    
+
 
 .about-image{
     border-radius: 50%;
@@ -57,14 +58,16 @@ li{
 
 section{
     font-size: x-large;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .project{
     min-width: 30vw;
     max-width: 30vw;
-    max-height: 40vh;
-    min-height: 40vh;
+    min-height: 45vh;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 .project img{
@@ -74,8 +77,16 @@ section{
     border: 2px solid lightgray;
 }
 
+.text-wrapper p{
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    text-indent: -15px;
+}
+
 a{
-    color: black;
+    color: #141414;
 }
 
 .buffer{
