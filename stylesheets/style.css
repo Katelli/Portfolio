@@ -10,6 +10,7 @@
     top: 0px;
     z-index: 99;
     padding: 1rem;
+    border: 2px solid rgb(185, 183, 183);
 }
 
 .ul{
@@ -54,6 +55,32 @@ section{
     line-height: 1.5;
 }
 
+.picture-gallery{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    max-width: 96vw;
+    gap: 1rem;
+}
+
+.square{
+    height: 30vh;
+    width: 30vw;
+    margin-bottom: 1rem;
+    border: 2px solid lightgray;
+}
+
+.rectangle{
+    height: 30vh;
+    width: 40vw;
+    margin-bottom: 1rem;
+    border: 2px solid lightgray;
+}
+
+.smf{
+    margin-left: 1rem;
+}
+
 .project{
     min-width: 30vw;
     max-width: 30vw;
@@ -92,20 +119,47 @@ button{
 }
 
 @media (max-width: 768px) {
-    .body{
-        min-width: 100vw;
-    }
-
-    .header{
-        min-width: 100vw;
-    }
-
     .project{
-        min-width: 100vh;
-        max-width: 100vh;
+        min-width: 60vh;
+        max-width: 60vh;
     }
-
+    
     .project img{
         max-width: 50vw;
     }
+    
+    .buffer{
+        min-height: 5vh;
+    }
+    
+    .square{
+        min-height: 20vh;
+        min-width: 20vh;
+        max-width: 20vw;
+        max-height: 20vh;
+    }
+    
+    .rectangle{
+        min-height: 20vh;
+        min-width: 30vh;
+        max-width: 30vh;
+        max-height: 20vh;
+    }
 }
+
+@media(max-width: 425px){
+    body{
+        width: 36rem;
+    }
+
+    .smf{
+        margin-left: 0;
+    }
+
+    .square{
+        min-height: 20vh;
+        min-width: 30vh;
+        max-width: 30vh;
+        max-height: 20vh;
+    }
+}   
