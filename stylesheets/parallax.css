@@ -7,11 +7,11 @@
 }
 
 
-.icon-light{
+.icon-dark{
     background: url('https://api.iconify.design/material-symbols/dark-mode.svg?color=%23383535&width=40&height=40') no-repeat center center / contain;
 }
 
-.icon-dark{
+.icon-light{
     background: url('https://api.iconify.design/iconoir/sun-light.svg?color=%23383535&width=40&height=40') no-repeat center center / contain;
 }
 
